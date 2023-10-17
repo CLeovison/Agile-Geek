@@ -2,6 +2,7 @@
   --header-color: rgb(157, 252, 232);
   --header-text-color: rgb(36, 44, 98);
   --header-hover: rgb(148, 0, 211);
+  --plain-text: rgb(33, 33, 33);
 }
 
 * {
@@ -173,9 +174,124 @@ section {
   transition: 0.3s ease-in-out all;
   border-radius: 15px;
 }
-@media (width > 650px) {
- 
 
+/*Start of Product Section*/
+.product-title {
+  padding-top: 50px;
+}
+.product-title > p {
+  color: var(--header-text-color);
+  text-align: center;
+  font-size: 4em;
+  font-weight: 600;
+}
+.solutions-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 5vw;
+}
+
+.details > p {
+  font-size: 20px;
+  color: var(--header-text-color);
+  text-align: center;
+  font-weight: 600;
+}
+
+/*Start of Airline Container*/
+.airline-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.airline-solutions {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background-color: var(--header-text-color);
+  padding: 30px;
+  border-radius: 10px;
+}
+.airline-information {
+  padding: 30px;
+}
+.airline-information > h1 {
+  font-size: 60px;
+  color: var(--header-color);
+  padding-bottom: 15px;
+}
+
+.air-dets > li {
+  padding: 5px;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: justify;
+}
+
+/*Start of Food and Beverage Solutions*/
+.fb-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.fb-solutions {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--header-color);
+  padding: 30px;
+  border-radius: 10px;
+}
+.fb-information {
+  padding: 30px;
+}
+.fb-information > h1 {
+  font-size: 60px;
+  color: var(--header-text-color);
+  padding-bottom: 15px;
+}
+
+.fb-dets,
+li {
+  padding: 5px;
+  color: var(--header-text-color);
+  font-size: 18px;
+  text-align: justify;
+}
+
+/*Start of Cost Effect*/
+.contents {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.informations > h1 {
+  font-size: 50px;
+  color: var(--header-text-color);
+}
+.informations > p {
+  padding-top: 30px;
+  font-size: 20px;
+  padding-right: 10px;
+  color: var(--plain-text);
+}
+.images{
+  padding-bottom: 20px;
+}
+.images > img {
+  border-radius: 20px;
+
+}
+/*End of Product Section*/
+@media (width > 650px) {
   .nav-links > i {
     display: none;
   }
@@ -229,13 +345,47 @@ section {
   .news-contents {
     flex-wrap: wrap;
   }
-  .news-bot{
+  .news-bot {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .news-info{
+  .news-info {
     width: 350px;
+  }
+
+  /*Start of Products Section*/
+  .solutions-container {
+    flex-direction: column;
+  }
+  .product-title > p {
+    font-size: 40px;
+  }
+
+  /*Start of Airline Container*/
+  .airline-solutions {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .airline-image > img {
+    width: 350px;
+  }
+
+  .fb-solutions {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .fb-image > img {
+    width: 350px;
+  }
+
+  .informations > p,h1{
+    padding: 5px;
+    text-align: center;
+  }
+  .images > img {
+    width: 350px;
+    
   }
 }
 
@@ -251,10 +401,15 @@ section {
     width: 50px;
     font-size: 15px;
   }
- 
+
   /*Start of Hero Section*/
   .information > p {
     padding-left: 0;
     font-size: 25px;
+  }
+
+  /*Start of Products Section*/
+  .product-title > p {
+    font-size: 30px;
   }
 }
