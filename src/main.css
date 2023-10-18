@@ -306,20 +306,64 @@ li {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
-.pos-information{
-  width:100%;
+
+.pos-information {
+  display: flex;
+  justify-content: space-evenly;
   background-color: var(--header-text-color);
-  padding: 30px;
+
   margin: 20px;
   border-radius: 10px;
 }
-.pos-information > p{
+
+
+.pos-information > p {
+  background-color: var(--header-text-color);
+
   font-size: 45px;
+  padding-top: 30px;
   padding: 10px;
+  color: #ffffff;
+  text-align: center;
 }
 .elev {
   color: var(--header-color);
+}
+.hm-vid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5%;
+  overflow: hidden;
+}
+.vid-intro {
+  object-fit: cover;
+
+  width: 80%;
+}
+.other-contents {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 20px 10px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 20px 30px 70px;
+  margin: 20px;
+}
+.other-contents > h3 {
+  color: var(--header-text-color);
+  font-size: 30px;
+  text-align: center;
+}
+.other-contents > p {
+  padding-top: 20px;
+  text-align: justify;
+  font-size: 25px;
+  color: var(--plain-text);
+  font-weight: 50;
+}
+.svgs {
+  color: var(--header-text-color);
 }
 /*End of PosExp Section */
 
@@ -424,20 +468,17 @@ li {
   .pos-main-container {
     flex-wrap: wrap;
   }
-  .pos-information{
+  .pos-information {
     flex-wrap: wrap;
-    padding: 0px;
   }
-  .pos-information > p{
+  .pos-information > p {
     padding: 30px;
   }
-  .other-contents {
-    width: 100%;
-  }
-  .pos-video{
+
+  .pos-video {
     overflow: hidden;
   }
-  .vid-intro{
+  .vid-intro {
     width: 100%;
     border-radius: 10px;
   }
