@@ -301,71 +301,94 @@ li {
   background-position: center;
   background-color: var(--bg-color);
 }
-
 .pos-main-container {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
 }
-
+.pos-main-container > div {
+  margin: 30px;
+}
 .pos-information {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
   background-color: var(--header-text-color);
-
-  margin: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
+  box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.3);
 }
-
-
 .pos-information > p {
-  background-color: var(--header-text-color);
+  font-size: 30px;
+  padding: 20px;
 
-  font-size: 45px;
-  padding-top: 30px;
-  padding: 10px;
   color: #ffffff;
-  text-align: center;
 }
 .elev {
   color: var(--header-color);
 }
-.hm-vid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 5%;
-  overflow: hidden;
-}
-.vid-intro {
-  object-fit: cover;
-
-  width: 80%;
+video {
+  border-radius: 20px;
 }
 .other-contents {
   background-color: rgb(255, 255, 255);
-  box-shadow: 20px 10px 15px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  padding: 20px 30px 70px;
-  margin: 20px;
+  box-shadow: 15px 10px 20px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+
+  padding: 20px;
 }
 .other-contents > h3 {
+  font-size: 35px;
   color: var(--header-text-color);
-  font-size: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   text-align: center;
 }
 .other-contents > p {
-  padding-top: 20px;
-  text-align: justify;
-  font-size: 25px;
   color: var(--plain-text);
-  font-weight: 50;
+  font-size: 20px;
+  text-align: center;
 }
-.svgs {
+
+.grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-container > div {
+  width: 25%;
+  margin: 15px;
+}
+.logos {
+  display: grid;
+  justify-content: center;
+}
+.main-grid {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 15px 10px 20px 15px rgba(0, 0, 0, 0.25);
+  padding: 40px;
+  border-radius: 10px;
+}
+.main-grid > h3 {
   color: var(--header-text-color);
+  font-size: 25px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-/*End of PosExp Section */
+.main-grid > p {
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+}
+.sub-grid {
+  background-color: var(--header-text-color);
+}
+.sub-grid > h3 {
+  color: var(--header-color);
+}
+.sub-grid > p {
+  color: #ffffff;
+}
+/*End of PosExp Section 	TEMPOROSA, JULLIE ANNE A*/
 
 /*Start of Media Queries*/
 @media (width > 650px) {
@@ -464,14 +487,17 @@ li {
   .images > img {
     width: 350px;
   }
+  .obj-position {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
+  .pos-information,
   .pos-main-container {
     flex-wrap: wrap;
   }
-  .pos-information {
-    flex-wrap: wrap;
-  }
   .pos-information > p {
+    text-align: center;
     padding: 30px;
   }
 
@@ -481,6 +507,17 @@ li {
   .vid-intro {
     width: 100%;
     border-radius: 10px;
+  }
+
+  .grid-container > div {
+    width: 90%;
+  }
+  .grid-container {
+    flex-wrap: wrap;
+  }
+
+  .brr {
+    display: none;
   }
 }
 
