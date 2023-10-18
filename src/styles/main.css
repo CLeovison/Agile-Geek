@@ -300,6 +300,7 @@ li {
   background-size: cover;
   background-position: center;
   background-color: var(--bg-color);
+  box-shadow: 10px 5px 10px  rgba(0, 0, 0, 0.2);
 }
 .pos-main-container {
   display: flex;
@@ -314,11 +315,11 @@ li {
   align-items: center;
   background-color: var(--header-text-color);
   border-radius: 20px;
-  box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.2);
 }
 .pos-information > p {
-  font-size: 30px;
-  padding: 20px;
+  font-size: 32px;
+  padding: 25px;
   color: #ffffff;
 }
 .elev {
@@ -539,6 +540,8 @@ video {
     display: none;
   }
  
+  /*Start of Contact Section*/
+
 }
 
 @media (width < 420px) {
