@@ -319,7 +319,6 @@ li {
 .pos-information > p {
   font-size: 30px;
   padding: 20px;
-
   color: #ffffff;
 }
 .elev {
@@ -388,8 +387,28 @@ video {
 .sub-grid > p {
   color: #ffffff;
 }
-/*End of PosExp Section 	TEMPOROSA, JULLIE ANNE A*/
+/*End of PosExp Section*/
 
+/*Start of Contact Section*/
+.contact-sub{
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  
+}
+.contact-image{
+  display: flex;
+  justify-content: center;
+ 
+  padding-top: 100px;
+  padding-bottom: 100px;
+ 
+}
+.contact-image > img{
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 15px 10px 20px 15px rgba(0, 0, 0, 0.25);
+}
 /*Start of Media Queries*/
 @media (width > 650px) {
   .nav-links > i {
@@ -519,6 +538,7 @@ video {
   .brr {
     display: none;
   }
+ 
 }
 
 @media (width < 420px) {
