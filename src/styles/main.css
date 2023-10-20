@@ -300,7 +300,7 @@ li {
   background-size: cover;
   background-position: center;
   background-color: var(--bg-color);
-  box-shadow: 10px 5px 10px  rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
 }
 .pos-main-container {
   display: flex;
@@ -391,24 +391,26 @@ video {
 /*End of PosExp Section*/
 
 /*Start of Contact Section*/
-.contact-sub{
+.contact-sub {
   display: flex;
   justify-content: center;
   align-items: stretch;
-  
 }
-.contact-image{
-  display: flex;
-  justify-content: center;
- 
-  padding-top: 100px;
+.contact-image {
+
   padding-bottom: 100px;
- 
 }
-.contact-image > img{
+.contact-image > img {
   width: 100%;
   border-radius: 20px;
   box-shadow: 15px 10px 20px 15px rgba(0, 0, 0, 0.25);
+}
+.contact-inf > p {
+  font-size: 50px;
+
+  transform: translate(50px, 250px);
+  color: var(--header-text-color);
+  font-weight: 600;
 }
 /*Start of Media Queries*/
 @media (width > 650px) {
@@ -536,35 +538,35 @@ video {
     flex-wrap: wrap;
   }
 
-  .brr {
+  .brr,
+  .ctc {
     display: none;
   }
- 
+
   /*Start of Contact Section*/
 
-}
+  @media (width < 420px) {
+    .imgs > img {
+      width: 350px;
+    }
+    .nav-items > a {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: column;
+      width: 50px;
+      font-size: 15px;
+    }
 
-@media (width < 420px) {
-  .imgs > img {
-    width: 350px;
-  }
-  .nav-items > a {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    width: 50px;
-    font-size: 15px;
-  }
+    /*Start of Hero Section*/
+    .information > p {
+      padding-left: 0;
+      font-size: 25px;
+    }
 
-  /*Start of Hero Section*/
-  .information > p {
-    padding-left: 0;
-    font-size: 25px;
-  }
-
-  /*Start of Products Section*/
-  .product-title > p {
-    font-size: 30px;
+    /*Start of Products Section*/
+    .product-title > p {
+      font-size: 30px;
+    }
   }
 }
