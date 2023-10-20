@@ -558,11 +558,11 @@ video {
       font-size: 15px;
     }
 
-    /*Start of Hero Section*/
-    .information > p {
-      padding-left: 0;
-      font-size: 25px;
-    }
+  /*Start of Hero Section*/
+  .information > p {
+    padding-left: 0;
+    font-size: 22px;
+  }
 
     /*Start of Products Section*/
     .product-title > p {
