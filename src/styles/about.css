@@ -6,6 +6,8 @@
   --bg-color: rgb(250, 250, 250);
   --contact-text: rgb(169, 169, 169);
 }
+
+/*Start of Mission & Vision Section*/
 .MisVis {
   width: 100%;
   background-image: url(/assets/Background/PosExp.webp);
@@ -39,24 +41,61 @@
 .main-images > img {
   border-radius: 20px;
 }
-.story-details{
-   padding: 50px;
+.story-details {
+  padding: 50px;
 }
-.story-details > h3{
-    text-align: center;
-    font-size: 4em;
-    padding: 30px;
-    color: var(--header-text-color);
-    font-weight: 600;
+.story-details > h3 {
+  text-align: center;
+  font-size: 4em;
+  padding: 30px;
+  color: var(--header-text-color);
+  font-weight: 600;
 }
-.story-details > p{
-    text-align: center;
-    padding: 0px 50px 80px 50px;
-    font-size: 23px;
-    color: var(--plain-text);
+.story-details > p {
+  text-align: center;
+  padding: 0px 50px 80px 50px;
+  font-size: 23px;
+  color: var(--plain-text);
+}
+/*End of Mission & Vision Section*/
 
-  
+/*Start of Founders*/
+.Founder{
+    width: 100%;
+    background-image: url('/assets/Background/Home-Background.webp');
 }
+
+.founder-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+.founder-titles{
+    font-weight: 600;
+    font-size: 4em;
+    color: var(--header-color);
+   
+    padding: 30px;
+}
+.founders-img > img{
+    border-radius: 20px;
+}
+.name{
+    color: var(--header-color);
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+.position{
+    text-align: center;
+    color: var(--bg-color);
+    padding-bottom: 10px;
+}
+
+/*End of Founders*/
+
+
 @media (width < 720px) {
   .Mission {
     flex-wrap: wrap;
@@ -74,23 +113,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
   }
   .main-images > img {
     width: 450px;
     border-radius: 20px;
   }
-  .dets > p{
-    padding: 10px;
-
-  }
-  .dets > h3{
+  .dets > p {
     padding: 10px;
   }
+  .dets > h3 {
+    padding: 10px;
+  }
 
+  /*Start of Founders*/
+
+  .founder-container{
+    flex-direction: column;
+  }
+  .founder-titles{
+    font-size: 3em;
+    text-align: center;
+    
+  }
 }
-@media(width < 420px){
-    .main-images > img{
-        width: 300px;
-    }
+@media (width < 420px) {
+  .main-images > img {
+    width: 300px;
+  }
 }

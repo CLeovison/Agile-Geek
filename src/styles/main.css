@@ -481,8 +481,6 @@ video {
  
 }
 
-
-
 .num-em,
 .number,
 .email {
@@ -503,9 +501,9 @@ video {
   .nav-links > i {
     display: none;
   }
-  .space{
+  /* .space{
     display: none;
-  }
+  } */
 }
 
 @media (width < 720px) {
@@ -646,11 +644,13 @@ video {
     display: flex;
     flex-direction: column;
   }
-
+  .foot-logo{
+    padding-bottom: 15px;
+  }
   .foots-title{
     padding-left: 10px;
     padding-bottom: 15px;
-    padding-top: 10px;
+    padding-top: 20px;
   }
   .foot-contact {
     flex-direction: column-reverse;
