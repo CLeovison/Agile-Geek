@@ -438,6 +438,9 @@ video {
 }
 
 /*Start of Footer*/
+.main-footer {
+  box-shadow: 10px 15px 50px rgba(0, 0, 0, 1);
+}
 .foot-container {
   display: flex;
   justify-content: space-between;
@@ -460,21 +463,47 @@ video {
   font-size: 18px;
 }
 
-.foot-contact{
+.foot-contact {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 30px 0px 0px;
 }
 .soc-med {
   display: flex;
-  padding: 20px;
+  align-items: center;
+  font-size: 16px;
 }
-.soc-med > a >i {
-  padding: 5px;
+.soc-med > a {
+  color: black;
+  text-decoration: none;
+  padding: 15px 10px 10px 8px;
+ 
 }
 
+
+
+.num-em,
+.number,
+.email {
+  display: flex;
+  align-items: center;
+}
+.sm-links{
+  text-decoration: none;
+  padding: 10px;
+  color: var(--header-text-color);
+  font-size: 17px;
+}
+.foots-title{
+  padding-left: 10px;
+}
 /*Start of Media Queries*/
 @media (width > 650px) {
   .nav-links > i {
+    display: none;
+  }
+  .space{
     display: none;
   }
 }
@@ -617,6 +646,18 @@ video {
     display: flex;
     flex-direction: column;
   }
+
+  .foots-title{
+    padding-left: 10px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+  }
+  .foot-contact {
+    flex-direction: column-reverse;
+    padding-left: 10px;
+  }
+  
+
   @media (width < 420px) {
     .imgs > img {
       width: 350px;
@@ -639,6 +680,20 @@ video {
     /*Start of Products Section*/
     .product-title > p {
       font-size: 30px;
+    }
+
+    /*Start of Footer Section*/
+    .foot-contact {
+     
+      flex-direction: column-reverse;
+      padding-left: 10px;
+    }
+    .num-em {
+      display: grid;
+      padding-bottom: 50px;
+    }
+    .soc-med{
+      display: grid;
     }
   }
 }
