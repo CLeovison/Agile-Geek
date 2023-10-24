@@ -99,10 +99,12 @@
 @media (width < 720px) {
   .Mission {
     flex-wrap: wrap;
+    padding: 10px;
   }
   .Vision {
     display: flex;
     flex-direction: column-reverse;
+    padding: 10px;
   }
   .dets > p {
     text-align: justify;
