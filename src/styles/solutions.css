@@ -145,6 +145,12 @@
 
 
 /*Start of Fujitsu Section*/
+.Fujitsu{
+  background-image: url(/assets/Background/PosExp.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .fu-details{
   display: flex;
   justify-content: space-evenly;
