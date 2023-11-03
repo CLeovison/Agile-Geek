@@ -39,12 +39,15 @@ label {
   border-radius: 10px;
   border: none;
   appearance: none;
+  padding-top: 10px;
+  outline: none;
 }
 textarea {
   margin-top: 20px;
   resize: none;
   padding-right: 80px;
   border-radius: 10px;
+  outline: none;
 }
 .submit {
   display: flex;

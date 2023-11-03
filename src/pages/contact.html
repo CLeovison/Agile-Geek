@@ -80,24 +80,26 @@
                 <form action="">
                   <label for="FName"
                     >First Name:
-                    <input type="text" name="FName" id="FName" class="fields" />
+                    <input type="text" name="FName" id="FName" class="fields" required/>
                   </label>
                   <label for="LName"
                     >Last Name:
-                    <input type="text" name="LName" id="LName" class="fields" />
+                    <input type="text" name="LName" id="LName" class="fields" required/>
                   </label>
                   <label for="EMail"
                     >E-Mail:
-                    <input type="email" name="EMail" id="EMail" class="fields" />
+                    <input type="email" name="EMail" id="EMail" class="fields" required/>
                   </label>
-                </form>
-                <div class="area-text">
+                  <div class="area-text">
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                 </div>
-
                 <div class="submit">
                   <button class="submits">Submit</button>
                 </div>
+                </form>
+                
+
+                
               </div>
             </div>
           </div>
@@ -172,7 +174,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <script src="/src/script/main.js"></script>
+    <script src="/src/script/contact.js"></script>
   </body>
 </html>

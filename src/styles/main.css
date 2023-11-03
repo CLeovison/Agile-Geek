@@ -112,7 +112,9 @@ section {
   width: auto;
   border-radius: 30px;
 }
-
+.imgs > img{
+  width: 400px;
+}
 /*News Section*/
 .main-container {
   display: grid;
@@ -308,6 +310,7 @@ li {
   justify-content: space-evenly;
 }
 .pos-main-container > div {
+  flex: 0 0 1;
   margin: 30px;
 }
 .pos-information {
@@ -497,6 +500,7 @@ video {
   padding-left: 10px;
 }
 /*Start of Media Queries*/
+
 @media (width > 650px) {
   .nav-links > i {
     display: none;
@@ -506,7 +510,7 @@ video {
   } */
 }
 
-@media (width < 720px) {
+@media (width < 950px) {
   /*Start of Navigation Section*/
 
   .navlist {
@@ -660,7 +664,7 @@ video {
 
   @media (width < 420px) {
     .imgs > img {
-      width: 350px;
+      width: 300px;
     }
     .nav-items > a {
       display: flex;
