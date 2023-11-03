@@ -13,6 +13,21 @@
   box-sizing: border-box;
 }
 
+/* Start of Scroll Bar Design */
+::-webkit-scrollbar {
+  width: 0.6rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: hsl(180, 6%, 16%);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: hsla(0, 2%, 24%, 0.37);
+  border-radius: 2rem;
+}
+/* End of Scroll Bar Design */
+
 /*Start of Navigation Section*/
 .logo {
   padding-left: 15px;
@@ -112,7 +127,7 @@ section {
   width: auto;
   border-radius: 30px;
 }
-.imgs > img{
+.imgs > img {
   width: 400px;
 }
 /*News Section*/
@@ -310,7 +325,6 @@ li {
   justify-content: space-evenly;
 }
 .pos-main-container > div {
-  flex: 0 0 1;
   margin: 30px;
 }
 .pos-information {
@@ -481,7 +495,6 @@ video {
   color: black;
   text-decoration: none;
   padding: 15px 10px 10px 8px;
- 
 }
 
 .num-em,
@@ -490,13 +503,13 @@ video {
   display: flex;
   align-items: center;
 }
-.sm-links{
+.sm-links {
   text-decoration: none;
   padding: 10px;
   color: var(--header-text-color);
   font-size: 17px;
 }
-.foots-title{
+.foots-title {
   padding-left: 10px;
 }
 /*Start of Media Queries*/
@@ -505,7 +518,6 @@ video {
   .nav-links > i {
     display: none;
   }
-
 }
 
 @media (width < 950px) {
@@ -646,10 +658,10 @@ video {
     display: flex;
     flex-direction: column;
   }
-  .foot-logo{
+  .foot-logo {
     padding-bottom: 15px;
   }
-  .foots-title{
+  .foots-title {
     padding-left: 10px;
     padding-bottom: 15px;
     padding-top: 20px;
@@ -658,7 +670,6 @@ video {
     flex-direction: column-reverse;
     padding-left: 10px;
   }
-  
 
   @media (width < 420px) {
     .imgs > img {
@@ -686,7 +697,6 @@ video {
 
     /*Start of Footer Section*/
     .foot-contact {
-     
       flex-direction: column-reverse;
       padding-left: 10px;
     }
@@ -694,8 +704,10 @@ video {
       display: grid;
       padding-bottom: 50px;
     }
-    .soc-med{
+    .soc-med {
       display: grid;
     }
   }
 }
+
+
