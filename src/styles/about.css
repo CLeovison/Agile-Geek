@@ -96,7 +96,7 @@
 /*End of Founders*/
 
 
-@media (width < 720px) {
+@media (width < 950px) {
   .Mission {
     flex-wrap: wrap;
     padding: 10px;

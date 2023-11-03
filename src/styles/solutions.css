@@ -182,7 +182,7 @@
   color: var(--header-text-color);
 }
 
-@media (width < 720px) {
+@media (width < 950px) {
   .heads {
     font-size: 50px;
   }

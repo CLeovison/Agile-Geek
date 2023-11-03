@@ -501,13 +501,11 @@ video {
 }
 /*Start of Media Queries*/
 
-@media (width > 650px) {
+@media (width > 955px) {
   .nav-links > i {
     display: none;
   }
-  /* .space{
-    display: none;
-  } */
+
 }
 
 @media (width < 950px) {
