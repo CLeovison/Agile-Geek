@@ -48,3 +48,15 @@
 .fujit:hover {
   color: var(--contact-text);
 }
+.downloads {
+  text-align: center;
+}
+.downloads > h2 {
+  margin-bottom: 20px;
+}
+.main-down {
+  border: 1px solid black;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
