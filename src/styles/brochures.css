@@ -17,7 +17,8 @@
   font-size: 2.5em;
   color: var(--header-text-color);
 }
-.point-of-sale {
+.point-of-sale,
+.airline-printer {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -26,16 +27,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid black;
+  margin: 10px;
+}
+.product-title {
+  font-size: 1.7em;
 }
 .brochu {
   width: 300px;
+  padding: 10px;
 }
-.fujit{
-    text-decoration: none;
-    font-size: 1.1em;
-    padding: 10px;
-    color: var(--header-text-color)
+.fujit {
+  text-decoration: none;
+  font-size: 1em;
+  padding: 10px;
+  color: var(--header-text-color);
+  margin: 10px;
+  border: 1px solid black;
 }
-.fujit:hover{
-    color: var(--contact-text);
+.fujit:hover {
+  color: var(--contact-text);
 }
