@@ -22,14 +22,17 @@ function Modal() {
   });
   hiddenImage.addEventListener("click", () => {
     openImage.classList.remove("active");
+    document.body.style.overflow = "auto";
+    document.body.style.height = "auto";
   });
 
   window.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
       openImage.classList.remove("active");
+      document.body.style.overflow = "auto";
+      document.body.style.height = "auto";
     }
-    document.body.style.overflow = "auto";
-    document.body.style.height = "auto";
+  
   });
 }
 

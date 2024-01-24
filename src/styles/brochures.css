@@ -79,12 +79,15 @@
 }
 
 .open-img > img {
-  margin-top: 70px;
+  margin-top: 20px;
 }
-.close-img{
- cursor: pointer;
-
-
+.close-img {
+  position: fixed;
+  top: 25px;
+  right: 32%;
+  cursor: pointer;
+  z-index: 100;
+  font-size: 22px;
 }
 .hidden-img {
   width: 100%;
@@ -101,5 +104,13 @@
 @media (width < 650px) {
   .breaks {
     height: 80px;
+  }
+  .open-img > img {
+    width: 300px;
+    margin-top: 0;
+  }
+  .close-img{
+    top: 25px;
+    right: 12%;
   }
 }
