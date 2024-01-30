@@ -467,7 +467,6 @@ video {
 .foot-info {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
 }
 .foot-loc {
   display: flex;
