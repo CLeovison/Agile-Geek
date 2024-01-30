@@ -671,7 +671,7 @@ video {
     padding-left: 10px;
   }
 
-  @media (width < 420px) {
+  @media (max-width: 420px) {
     .imgs > img {
       width: 300px;
     }
