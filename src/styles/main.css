@@ -670,8 +670,6 @@ video {
     flex-direction: column-reverse;
     padding-left: 10px;
   }
-
-  
 }
 
 @media (max-width: 420px) {
@@ -705,7 +703,6 @@ video {
   }
   .num-em {
     display: grid;
-    padding-bottom: 50px;
   }
   .soc-med {
     display: grid;
