@@ -671,43 +671,43 @@ video {
     padding-left: 10px;
   }
 
-  @media (max-width: 420px) {
-    .imgs > img {
-      width: 300px;
-    }
-    .nav-items > a {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      flex-direction: column;
-      width: 50px;
-      font-size: 15px;
-    }
-
-    /*Start of Hero Section*/
-    .information > p {
-      padding-left: 0;
-      font-size: 22px;
-    }
-
-    /*Start of Products Section*/
-    .product-title > p {
-      font-size: 30px;
-    }
-
-    /*Start of Footer Section*/
-    .foot-contact {
-      flex-direction: column-reverse;
-      padding-left: 10px;
-    }
-    .num-em {
-      display: grid;
-      padding-bottom: 50px;
-    }
-    .soc-med {
-      display: grid;
-    }
-  }
+  
 }
 
+@media (max-width: 420px) {
+  .imgs > img {
+    width: 300px;
+  }
+  .nav-items > a {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 50px;
+    font-size: 15px;
+  }
 
+  /*Start of Hero Section*/
+  .information > p {
+    padding-left: 0;
+    font-size: 22px;
+  }
+
+  /*Start of Products Section*/
+  .product-title > p {
+    font-size: 30px;
+  }
+
+  /*Start of Footer Section*/
+  .foot-contact {
+    flex-direction: column-reverse;
+    padding-left: 10px;
+  }
+  .num-em {
+    display: grid;
+    padding-bottom: 50px;
+  }
+  .soc-med {
+    display: grid;
+  }
+}
