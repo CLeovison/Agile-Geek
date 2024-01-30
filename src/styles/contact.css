@@ -67,7 +67,7 @@ textarea {
   padding: 40px;
   border-radius: 10px;
 }
-@media (width < 950px) {
+@media (max-width: 950px) {
   .main-element {
     flex-direction: column;
   }
@@ -80,7 +80,7 @@ textarea {
     display: none;
   }
 }
-@media (width < 420px) {
+@media (max-width: 420px) {
   .contact-form {
     padding: 12px;
   }

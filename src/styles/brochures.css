@@ -101,7 +101,7 @@
 .breaks {
   height: 20px;
 }
-@media (width < 650px) {
+@media (max-width: 650px) {
   .breaks {
     height: 80px;
   }

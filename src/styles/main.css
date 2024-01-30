@@ -514,13 +514,13 @@ video {
 }
 /*Start of Media Queries*/
 
-@media (width > 955px) {
+@media (min-width: 955px) {
   .nav-links > i {
     display: none;
   }
 }
 
-@media (width < 950px) {
+@media (max-width: 950px) {
   /*Start of Navigation Section*/
 
   .navlist {

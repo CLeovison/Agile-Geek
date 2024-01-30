@@ -32,7 +32,6 @@ function Modal() {
       document.body.style.overflow = "auto";
       document.body.style.height = "auto";
     }
-  
   });
 }
 
