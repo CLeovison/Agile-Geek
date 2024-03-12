@@ -81,6 +81,12 @@ textarea {
   }
 }
 @media (max-width: 420px) {
+ 
+
+  .fields{
+    padding: 10px;
+    
+  }
   .contact-form {
     padding: 12px;
   }
